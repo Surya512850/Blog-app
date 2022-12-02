@@ -12,17 +12,20 @@ If you want to see the project in action, create a python virtual environment in
 Make sure you have Python installed on your device.
 
 ```shell
-py -m venv [Your virtual env name] ```
+py -m venv [Your virtual env name]
+```
 
 Activate your virtual environment 
 
 ```shell
-[virtual env]/Scripts/activate ```
+[virtual env]/Scripts/activate
+```
 
 Install django using pip command. 
 
 ```shell
-pip install django ```
+pip install django 
+```
 
 
 
