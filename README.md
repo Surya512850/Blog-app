@@ -8,7 +8,7 @@ This is a Blog application which is developed using Django, a python framework. 
 
 ## Usage ##
 
-If you want to see the project in action, create a python virtual environment in your projects directory through the command.
+If you want to see the project in action, create a python virtual environment in your projects directory through the command line.
 Make sure you have Python installed on your device.
 
 ```shell
@@ -27,7 +27,24 @@ Install django using pip command.
 pip install django 
 ```
 
+In this repository, the main code is in the blog_app folder. For safety purposes, the SECRET_KEY in settings.py file is removed. 
+So, start your own project by 
 
+```shell
+django-admin startproject YourProjectName
+```
+The rest of the code is same. For the text editor feature in the body of the blog post, ckeditor is used. Install it by
 
+```shell
+pip install django-ckeditor
+```
+Make sure all the apps (blog, users, ckeditor) are in the INSTALLED_APPS in settings.py file. 
+Refer to the settings.py file for changes regarding templates and redirect urls. 
+To run the project on your machine, type
 
+```shell
+py manage.py runserver [port no Optional]
+```
+
+All the above commands are for windows. 
 
