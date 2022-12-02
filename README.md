@@ -6,6 +6,8 @@ This is a Blog application which is developed using Django, a python framework. 
 - [x] Python 3
 - [x] Django version 4.1.3
 
+For the front end, I used basic HTML with bootstrap for styling.
+
 ## Usage ##
 
 If you want to see the project in action, create a python virtual environment in your projects directory through the command line.
