@@ -62,14 +62,14 @@ All the above commands are for windows.
 
 ## Sample Walkthrough ##
 
-## Home page
+#### Home page
 
 ![](1.png)
 
-## Created posts after login
+#### User Posts
 
 ![](2.png)
 
-## Previous Versions
+#### Previous Versions
 
 ![](3.png)
