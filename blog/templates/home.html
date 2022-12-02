@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{%block content %}
+</br>
+<h1>All Posts</h1> 
+<table class = "table table-striped table-hover table-bordered">
+{% for object in object_list %}
+<tr>
+    <td>
+        <a href ="{% url 'article_details' object.pk %}">
+            {{object.title}}</a>- {{object.author.first_name}} {{object.author.last_name}} - {{object.date}}
+    </td>
+</tr>
+{%endfor%}
+</table>
+{%endblock%}

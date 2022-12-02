@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}{{object.title}}{% endblock %}
+{% block content %}
+</br>
+<h1> {{object.title}} </h1>
+<small> By : {{object.author}}
+<small>Posted on : {{object.date}}</small>
+<hr>
+<br/>
+{{object.body|safe}}
+<br/><br/>
+<a href="{%url 'user_posts' object.author %}" class="btn btn-primary"> Back</a>
+{% endblock %}

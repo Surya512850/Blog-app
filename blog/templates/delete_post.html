@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Delete Post {% endblock %}
+{% block content %}
+<br/>
+<h1> Delete Post: {{object.title}} </h1>
+<br/><br/>
+{% if user.is_authenticated %}
+{% if user.id == object.author.id %}
+<div class = "form-group">
+<form method = "POST"> {%csrf_token%}
+    <strong> Are you Sure?? </strong> <br/><br/>
+<button class="btn btn-primary">Delete</button>
+</div>
+{%else%}
+You can't delete me Mr.Hacker.
+{%endif%}
+{% else %}
+You are not logged in. <br/>
+Click <a href = "{% url 'login' %}">here</a> to login.
+{% endif %}
+{% endblock %}

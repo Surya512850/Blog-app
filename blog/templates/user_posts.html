@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{%block content %}
+</br>
+<h1>My Posts</h1> 
+<table class = "table table-striped table-hover table-bordered">
+</br>
+{% for object in object_list %}
+<tr>
+    <td>
+        <a href ="{% url 'article_details' object.pk %}">
+            {{object.title}}</a>-{{object.date}}
+            {% if user.is_authenticated %}
+            {% if user.id == object.author.id %}
+    </td>
+    <td align="right">
+            <small><a href = "{%url 'update_blog' object.pk %}" class = "btn btn-outline-secondary btn-sm">Edit</a>
+            <a href = "{%url 'delete_blog' object.pk %}"class = "btn btn-outline-secondary btn-sm">Delete</a>
+            <a href = "{% url 'previous-posts' object.pk %}"class = "btn btn-outline-secondary btn-sm"> Previous Versions</a></small>
+    </td>
+</tr> 
+        {% endif %}
+        {%else%}
+        You are not logged in. Click <a href = "{%url 'login' %}">here</a> to login. 
+        {% endif %}
+{%endfor%}
+</table>
+{%endblock%}
