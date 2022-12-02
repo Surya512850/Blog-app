@@ -8,5 +8,23 @@ This is a Blog application which is developed using Django, a python framework. 
 
 ## Usage ##
 
+If you want to see the project in action, create a python virtual environment in your projects directory through the command.
+Make sure you have Python installed on your device.
+
+```shell
+py -m venv [Your virtual env name] ```
+
+Activate your virtual environment 
+
+```shell
+[virtual env]/Scripts/activate ```
+
+Install django using pip command. 
+
+```shell
+pip install django ```
+
+
+
 
 
