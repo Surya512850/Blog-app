@@ -1,5 +1,6 @@
 # Blog-app
-This is a Blog application which is developed using Django, a python framework. This application enables users to create, read, update and delete blog posts with authentication. Furthermore, the previous versions of each blog post are available. These versions are stored each time the user saves the post. All the updates of that will be reflected in the database.
+
+This is a Blog application which is developed using Django, a python framework. This application enables users to create, read, update and delete blog posts with authentication. Furthermore, the previous versions of each blog post are available. These versions are stored each time the user saves the post. All the updates of the original post will be reflected separately in the database. If you choose to update the previous version, the original version gets updated too.
 
 ## Requirements ##
 
@@ -59,3 +60,16 @@ py manage.py runserver [port no Optional]
 
 All the above commands are for windows. 
 
+## Sample Walkthrough ##
+
+## Home page
+
+![](1.png)
+
+## Created posts after login
+
+![](2.png)
+
+## Previous Versions
+
+![](3.png)
